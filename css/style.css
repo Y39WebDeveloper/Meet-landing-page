@@ -1,0 +1,207 @@
+header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 80px;
+    background-color: var(--white);
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 87px 0;
+}
+.hero .tablet-hero{
+    display: none;
+}
+.hero .left-hero{
+    transform: translate(-26px ,-23px);
+}
+.hero .right-hero{
+    transform: translate(26px, 23px);
+}
+.hero .content{
+    max-width: 448.3px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+}
+.hero .content h1{
+    color: var(--slate-900);
+}
+.hero .content p{
+    color: var(--slate-600);
+}
+.hero .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 136px 0 72px 0;
+}
+.cont .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin: 64px 0;
+    flex-wrap: wrap;
+}
+.cont .img-container img{
+    width: 256px;
+    height: 256px;
+    border-radius: 8px;
+}
+.cont .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 544px;
+}
+.cont .content h4{
+    text-transform: uppercase;
+    color: var(--cyan-600);
+    margin-bottom: 16px;
+}
+.cont .content h2{
+    margin-bottom: 32px;
+    color: var(--slate-900);
+    max-width: 450px;
+}
+.cont .content p{
+    color: var(--slate-600);
+}
+footer{
+    padding-top: 80px;
+}
+footer .number{
+    transform: translateY(50%);
+}
+footer .content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    background: url("../assets/desktop/image-footer.jpg") no-repeat center center / cover;
+    padding: 112px 160px;
+    position: relative;
+}
+footer .content .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4d96a9d9;
+}
+footer .content h2{
+    color: var(--white);
+    max-width: 445px;
+}
+footer .content p{
+    color: var(--white);
+    max-width: 355px;
+}
+footer .content h2,
+footer .content p,
+footer .content button{
+    z-index: 3;
+}
+@media (max-width: 1188px) {
+    header{
+        padding-top: 48px;
+    }
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+        overflow: hidden;
+        padding: 64px 0;
+    }
+    .hero .left-hero,
+    .hero .right-hero{
+        display: none;
+    }
+    .hero .tablet-hero{
+        display: block;
+        height: 303px;
+    }
+    .hero .content{
+        gap: 24px;
+    }
+    .cont{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 136px 0 64px 0;
+    }
+    .cont .img-container{
+        gap: 24px;
+    }
+    .cont .img-container img{
+        width: 152px;
+        height: 160px;
+    }
+    .cont .content{
+        max-width: 504px;
+    }
+    .cont .content h4{
+        text-transform: uppercase;
+        color: var(--cyan-600);
+        margin-bottom: 16px;
+    }
+    .cont .content h2{
+        margin-bottom: 32px;
+        color: var(--slate-900);
+        max-width: 450px;
+    }
+    .cont .content p{
+        color: var(--slate-600);
+    }
+    footer .content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 64px 32px;
+        gap: 24px;
+        background: url("../assets/tablet/image-footer.jpg") no-repeat center center / cover;
+    }
+    footer .content h2,
+    footer .content p{
+        max-width: 504px;
+    }
+}
+@media (max-width: 768px) {
+    .hero{
+        gap: 48px;
+        overflow: hidden;
+        padding: 64px 0 32px;
+    }
+    .hero .tablet-hero{
+        height: 160px;
+    }
+    .hero .content{
+        gap: 24px;
+        max-width: 305px;
+        background: url("../assets/mobile/image-footer.jpg") no-repeat center center / cover;
+    }
+    .hero .btns{
+        flex-direction: column;
+    }
+    .cont{
+        padding: 128px 0 64px 0;
+    }
+    .cont .img-container{
+        gap: 16px;
+    }
+    .cont .content{
+        max-width: 311px;
+    }
+}

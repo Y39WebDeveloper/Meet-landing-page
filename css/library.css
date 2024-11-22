@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+:root{
+    --cyan-600: #4D96A9;
+    --cyan-300: #8FE3F9;
+
+    --purple-600: #855FB1;
+    --purple-300: #D9B8FF;
+
+    --slate-900: #28283D;
+    --slate-600: #87879D;
+    --slate-300: #D1D1DF;
+
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: 0px;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: 0px;
+}
+h4{
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: 4px;
+}
+p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+.btn{
+    all: unset;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: var(--white);
+    padding: 16px 40px;
+    border-radius: 50px;
+    line-height: 150%;
+    font-weight: 900;
+    transition: .8s;
+    cursor: pointer;
+}
+.btn.btn-primary{
+    background-color: var(--cyan-600);
+}
+.btn.btn-primary span{
+    color: var(--cyan-300);
+}
+.btn.btn-secondary{
+    background-color: var(--purple-600);
+}
+.btn.btn-secondary span{
+    color: var(--purple-300);
+}
+.btn.btn-primary:hover{
+    background-color: #71C0D4;
+}
+.btn.btn-secondary:hover{
+    background-color: #B18BDD;
+}
+.number{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 6;
+}
+.number span{
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 900;
+    color: var(--slate-600);
+    border: 1px solid var(--slate-300);
+    background-color: #fff;
+}
+.number span::before{
+    content: "";
+    width: 1px;
+    height: 80px;
+    background-color: var(--slate-300);
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+@media (max-width: 1188px) {
+    h1{
+        font-size: 48px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    h4{
+        font-size: 14px;
+        line-height: 110%;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h4{
+        font-size: 12px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
